@@ -45,6 +45,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({ 
@@ -61,6 +62,10 @@ app.use('/api/monitoring', monitoringRoutes);
 app.use('/api/alerts', alertRoutes);
 app.use('/api/wellness', wellnessRoutes);
 app.use('/api/contacts', contactRoutes);
+
+app.get('/', (req, res) => {
+  res.send('SafeGuard AI Backend API is running');
+});
 
 // Error handling middleware
 app.use(notFound);

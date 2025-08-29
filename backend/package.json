@@ -1,0 +1,67 @@
+{
+  "name": "safeguard-ai-backend",
+  "version": "1.0.0",
+  "description": "SafeGuard AI - Family Safety & Wellness Monitoring Platform Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build step required for Node.js backend'",
+    "test": "echo 'No tests specified' && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "render-postbuild": "npm ci --only=production",
+    "render-start": "node server.js"
+  },
+  "keywords": [
+    "family-safety",
+    "ai-monitoring",
+    "wellness-tracking",
+    "emergency-alerts",
+    "healthcare",
+    "iot",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "SafeGuard AI Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.23.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.10.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": "18.18.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/safeguard-ai-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/safeguard-ai-backend/issues"
+  },
+  "homepage": "https://github.com/your-username/safeguard-ai-backend#readme"
+}

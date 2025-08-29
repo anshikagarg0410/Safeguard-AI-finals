@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: safeguard-ai-backend
+    env: node
+    runtime: node
+    nodeVersion: 18.18.0
+    buildCommand: npm ci --only=production && npm run build
+    startCommand: npm run render-start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+    healthCheckPath: /health
+    autoDeploy: true
+    region: oregon
+    scaling:
+      minInstances: 0
+      maxInstances: 1

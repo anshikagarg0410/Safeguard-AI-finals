@@ -29,7 +29,7 @@ SafeGuard AI is a comprehensive, privacy-first platform designed to help familie
   All video and activity data is analyzed locally, ensuring user privacy and compliance.
 
 ## Demo link
-[https://familysafe-ai.vercel.app/](https://familysafe-ai.vercel.app/)
+[https://familysafe-ai.vercel.app/](https://familysafe-ai-two.vercel.app/)
 
 ## Future Scope
 
